@@ -1,4 +1,5 @@
-# MPC-Force-SSH-Firmwares
+# MPC Live / Force firmware with mouse support(!)
+![Screenshot of mouse working on the AKAI Force](https://i.imgur.com/8WLpZtM.jpeg)
 Modified AKAI MPC and FORCE firmwares with SSH and mouse control enabled.
 
 Credit for the SSH tools goes to [TheKikGen](https://github.com/TheKikGen/MPC-LiveXplore), mouse addon credit goes to no3z on the Mockba Mod discord and [Amit Talwar](https://github.com/intelliriffer).
@@ -38,11 +39,17 @@ In the "ssh" folder you'll find all the tools you need to patch a firmware yours
 * Download the stock firmware from AKAI
 * Put the downloaded firmware into the ssh folder, next to the shell script
 * Decompress the firmware into a file called "mpc.img" with [mpcimg2](https://github.com/TheKikGen/MPC-LiveXplore/tree/master/imgmaker/bin) from [TheKikGen](https://github.com/TheKikGen/MPC-LiveXplore) with the command (MPC-update.img is just an example here, replace with the name of the actual file you donwloaded):
-`./mpcimg2 -r MPC-update.img mpc.img`
+```
+./mpcimg2 -r MPC-update.img mpc.img
+```
 * Run the shell script that will mount and modify the firmware with:
-`sudo bash ssh_image.sh mpc.img`
+```
+sudo bash ssh_image.sh mpc.img
+```
 * Then pack the firmware back into the format the device expects (decompressing and compressing has been removed in Gen2 devices, I'll have a look at it at some point):
-`./mpcimg2 -m MPC-update.img mpc.img MPC-mouse-ssh-update.img`
+```
+./mpcimg2 -m MPC-update.img mpc.img MPC-mouse-ssh-update.img
+```
 * Copy the generated firmware file on to your SD card or USB stick and install it to your machine.
 
 
