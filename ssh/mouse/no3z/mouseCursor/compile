@@ -1,0 +1,1 @@
+gcc force_cursor.c -shared -fPIC -I /usr/include/libdrm -o libforce_cursor.so

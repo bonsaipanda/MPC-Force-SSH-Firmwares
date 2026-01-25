@@ -50,3 +50,8 @@ In the "ssh" folder you'll find all the tools you need to patch a firmware yours
 No. The box will work fine with the stock, this just adds bells and whistles that one does not need in every day workflow. Do not install these if you have a liveshow coming up or you're in the middle of a critical production. 
 
 Remember, when the blue smoke comes out of the machine, you'll know that the genie is finally free and it takes the life of the device with it. 
+
+# You lied. I connected my mouse and I'm not seeing anything
+* Make sure your mouse is connected before you boot up
+* Look in the configuration file that your mouse matches the device path and correct if necessary
+* Pray to the Red AKAI Gods to give you mercy and get it working

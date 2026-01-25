@@ -1,0 +1,59 @@
+/dev/input/event2
+3
+
+
+# Mouse Button to Hardware Button Mappings via MIDI CC
+
+# MATRIX button (hardware button)
+# BTN_MIDDLE=MIDI_CC_111
+
+# MENU button (hardware button)
+BTN_RIGHT=MIDI_CC_108
+
+# CLIP button (hardware button)  
+BTN_SIDE=MIDI_CC_112
+
+# EDITOR button (hardware button)
+BTN_EXTRA=MIDI_CC_110
+             
+
+
+#REFERENCE
+#-------------
+#🎚️ View/Screen Navigation                                                                                                                                                                  
+                            
+#CC_103 = SHOW-EDITOR - Show editor view                                                                                                                                                  
+#CC_108 = MENU - Open menu                                                                                                                                                                
+#CC_109 = SHOW-MIXER - Show mixer view                                                                                                                                                    
+#CC_110 = SHOW-EDITOR - Show editor view                                                                                                                                                  
+#CC_111 = SHOW-MATRIX - Show matrix view                                                                                                                                                  
+#CC_112 = SHOW-CLIP - Show clip/arrange view                                                                                                                                              
+#CC_113 = SHOW-SAVE - Show save dialog                                                                                                                                                    
+#CC_114 = SHOW-LOAD - Show load dialog    
+                                                                                                                                                                     
+#Standard Mouse Buttons                                                                                                                                                                                            
+#-------------                                                                                                                                            
+#  2. BTN_RIGHT - Right mouse button (secondary click)                                                                                                                                        
+#    - Default: Sends touch events                                                                                                                                                            
+#    - Typically context menu button                                                                                                                                                          
+#  3. BTN_MIDDLE - Middle mouse button (wheel click)                                                                                                                                          
+#    - Default: Sends touch events                                                                                                                                                            
+#    - Usually the clickable scroll wheel                                                                                                                                                     
+#                                                                                                                                                                                             
+#  Extra/Side Buttons (Gaming Mice)                                                                                                                                                           
+#                                                                                                                                                                                             
+#  4. BTN_SIDE - Side button (usually thumb button 1)                                                                                                                                         
+#    - Also called "Mouse 4" or "Back button" on some mice                                                                                                                                    
+#    - Common on gaming/ergonomic mice                                                                                                                                                        
+#  5. BTN_EXTRA - Extra button (usually thumb button 2)                                                                                                                                       
+#    - Also called "Mouse 5" or "Forward button" on some mice                                                                                                                                 
+#    - Common on gaming/ergonomic mice                                                                                                                                                        
+#  6. BTN_FORWARD - Forward navigation button                                                                                                                                                 
+#    - Browser forward button                                                                                                                                                                 
+#    - May overlap with BTN_EXTRA on some mice                                                                                                                                                
+#  7. BTN_BACK - Back navigation button                                                                                                                                                       
+#    - Browser back button                                                                                                                                                                    
+#    - May overlap with BTN_SIDE on some mice                                                                                                                                                 
+#  8. BTN_TASK - Task button                                                                                                                                                                  
+#    - Special button on some mice                                                                                                                                                            
+#    - Less common, depends on mouse model    
