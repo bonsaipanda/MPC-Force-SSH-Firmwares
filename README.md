@@ -9,6 +9,9 @@ Credit for the SSH tools goes to [TheKikGen](https://github.com/TheKikGen/MPC-Li
 
 The modifications and scripts are under various open source licences, but ***the original content in the firmware is © InMusic, Inc. and it's subsidiaries.***
 
+# How do I install this
+Download the firmware for your device and put the downloaded file into the root of your USB stick or SD card. Then in the device, go to Preferences and tap the button that says upgrade and select "USB Drive Update". It should recognize the file and prompt you about installing it.
+
 # Ok I tried it, how do I get back
 You can install any official firmware provided by AKAI and it will overwrite any changes made by these hacked firmwares.
 
