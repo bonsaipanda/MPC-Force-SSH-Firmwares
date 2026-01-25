@@ -31,3 +31,22 @@ I'll provide all the tools here in this repository so you can do the modificatio
 
 The modifications are really minimal. Opening permissions for SSH, copying necessary networking files from the host, injecting a preload into the systemd service of the MPC OS so we can capture the DRM (Direct Rendering Manager) thread that hides the mouse cursor and adding the library that actually draws a cursor on screen.
 
+# How to do it yourself
+In the "ssh" folder you'll find all the tools you need to patch a firmware yourself. I wrote a shell script that handles modifying the contents so you don't need to do it by hand. Read through it carefully, so you get the idea of what it does and if there is a need to change file paths. I did my patching in Ubuntu 24.x, other distros might have some differences in their systems. You only need a couple of files, so it should be relatively straightforward. If it doesn't work, welp. 🤷
+
+* Download the ssh folder on to your machine
+* Download the stock firmware from AKAI
+* Put the downloaded firmware into the ssh folder, next to the shell script
+* Decompress the firmware into a file called "mpc.img" with [mpcimg2](https://github.com/TheKikGen/MPC-LiveXplore/tree/master/imgmaker/bin) from [TheKikGen](https://github.com/TheKikGen/MPC-LiveXplore) with the command (MPC-update.img is just an example here, replace with the name of the actual file you donwloaded):
+`./mpcimg2 -r MPC-update.img mpc.img`
+* Run the shell script that will mount and modify the firmware with:
+`sudo bash ssh_image.sh mpc.img`
+* Then pack the firmware back into the format the device expects (decompressing and compressing has been removed in Gen2 devices, I'll have a look at it at some point):
+`./mpcimg2 -m MPC-update.img mpc.img MPC-mouse-ssh-update.img`
+* Copy the generated firmware file on to your SD card or USB stick and install it to your machine.
+
+
+# I've heard of these SSH firmwares, do I need to use one?
+No. The box will work fine with the stock, this just adds bells and whistles that one does not need in every day workflow. Do not install these if you have a liveshow coming up or you're in the middle of a critical production. 
+
+Remember, when the blue smoke comes out of the machine, you'll know that the genie is finally free and it takes the life of the device with it. 
