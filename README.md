@@ -1,5 +1,5 @@
 # MPC Live / Force firmware with mouse support(!)
-![Screenshot of mouse working on the AKAI Force](https://i.imgur.com/8WLpZtM.jpeg)
+![Screenshot of mouse working on the AKAI Force](https://raw.githubusercontent.com/bonsaipanda/MPC-Force-SSH-Firmwares/refs/heads/main/mouse_on_the_force.jpg)
 Modified AKAI MPC and FORCE firmwares with SSH and mouse control enabled.
 
 Credit for the SSH tools goes to [TheKikGen](https://github.com/TheKikGen/MPC-LiveXplore), mouse addon credit goes to no3z on the Mockba Mod discord and [Amit Talwar](https://github.com/intelliriffer).
