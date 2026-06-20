@@ -1,0 +1,2 @@
+# Mouse on the AKAI Force / MPC Live from 3.9.0 onwards
+Firmware 3.9.0 changed the way graphics are drawn on screen and the original mouse control stopped working. This version attempts to hook up to JUCE's unused hardware layers for the mouse pointer and inject mouse actions to the MPC OS. This is very experimental and might result in unpredictable behaviour so the classic warnings apply. 

@@ -1,0 +1,12 @@
+[Unit]
+Description=InMusic MPC Application
+Wants=az01-script-runner.service
+After=az01-network-midi.service az01-script-runner.service az01-usbsata-fixer.service touch-fw-update.service xmos-update.service
+
+[Service]
+Environment=LD_PRELOAD=/usr/lib/libforce_cursor.so
+ExecStart=/usr/bin/az01-launch-MPC
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

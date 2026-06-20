@@ -1,0 +1,2 @@
+sudo bash ssh_image.sh mpc.img
+python3 mpcimg make-mpc mpc.img mpc-<version>-ssh-update.img <version>
